@@ -1,0 +1,232 @@
+body{
+  background-color: #fbf4f438;
+  overflow-x: hidden;
+  background-repeat: unset;
+    background-size: contain;
+    background-image: url('../images/arrowgrid.png');
+}
+#linkd{
+  border-bottom: 2px solid transparent;
+}
+#linkd:hover{
+  border-bottom: 2px solid red;
+}
+#wrap{
+  width: 530px;
+  /* margin: 20px auto 0; */
+  height: 750px;
+}
+#input{
+  border: 1px dotted green;
+  padding: 2%;
+  outline: none;
+  width: 80%;
+  background-color: white;
+  margin-bottom: 15px;
+}
+#submit{
+   float: right;
+   width: 120px;
+   margin-bottom: 15px;
+   /* border: 1px dotted blue; */
+   background-color: transparent;
+   border-style: none;
+}
+#form-wrap{
+  overflow: hidden;
+  height: 447px;
+  position: relative;
+  top: 0px;
+  transition: all 1s ease-in-out .3s;
+}
+#form-wrap:before{
+  content: "";
+  position: absolute;
+  bottom: 128px;
+  left: 0px;
+  background: url('../img/before.png');
+  width:530px;
+  height: 317px;
+}
+#form-wrap:after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: url('../img/after.png');
+  width: 530px;
+  height: 259px;
+}
+#form-wrap.hide:after,
+#form-wrap.hide:before{
+  display: none;
+}
+#form-wrap:hover{
+  height: 800px;
+  top: -200px;
+}
+form{
+  background: #f8f9fa;
+  position: relative;
+  top: 200px;
+  overflow: hidden;
+  height: 200px;
+  width: 450px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px dotted red;
+  /* border-right: 3px; */
+  text-align: center;
+  transition: all 1s ease-in-out .3s;
+}
+#form-wrap:hover form{
+  height: 530px;
+}
+
+#navanim{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  background: #0f0f11;
+  overflow: hidden;
+}
+
+.heading{
+  height: 100px;
+  /* background-color: red; */
+}
+/* #exclamation{
+  margin-top:100px;
+  margin-left:30%;
+  color:blue;
+  font-size: 20px;
+  margin-left: 20px;
+  animation: up 2s infinite;
+}
+@keyframes up {
+  0%{
+    font-size: 10px;
+  }
+  50%{
+    color: green;
+    font-size: 25px;
+  }
+  100%{
+    font-size: 30px;
+  }
+}
+#para{
+  position: absolute;
+  top: 20%;
+}
+#link{
+  position: absolute;
+  top: 60%;
+  color:#3aaf9f;
+  font-size:30px;
+  text-decoration:none;
+} */
+
+
+
+/* iframe{
+  width:400px;
+} */
+
+footer{
+  height: 350px;
+  margin-top: 1%;
+  margin-bottom:0;
+  background-color: #0e0f10;
+  /* background-image:linear-gradient(90deg,#255c68,#052035); */
+  /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
+  box-shadow: 0px 0px 25px 0px rgba(98,208,191,1);
+}
+.socialicon{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 10px;
+}
+.socialicon i{
+  margin: 2%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: -3px -3px 5px 0px #ffffffa6,
+              3px 3px 5px 0px #0000004a;
+}
+.socialicon i:hover{
+  box-shadow: -3px -3px 5px 0px #ffffffa6 inset,
+              3px 3px 5px 0px #0000004a inset;
+}
+
+@media (max-width: 576px) {
+  #form-wrap:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: url('../img/after.png');
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    width: 530px;
+    height: 259px;
+  }
+  iframe{
+    width: auto;
+  }
+  #form-wrap:before{
+    content: "";
+    position: absolute;
+    bottom: 128px;
+    left: 0px;
+    background: url('../img/before.png');
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    width:530px;
+    height: 317px;
+  }
+  form{
+    background: #f8f9fa;
+    position: relative;
+    top: 200px;
+    overflow: hidden;n
+    height: 200px;
+    width: 280px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px dotted red;
+    /* border-right: 3px; */
+    text-align: center;
+    transition: all 1s ease-in-out .3s;
+  }
+  #wrap{
+    width: 300px;
+    /* margin: 20px auto 0; */
+    height: 750px;
+  }
+  .col1{
+    margin-bottom: 530px;
+  }
+  /* #exclamation{
+    margin-top: 40px;
+    margin-left: 20px;
+  } */
+  #para{
+    margin-top: 100px;
+  }
+  #link{
+    margin-top: 500px;
+  }
+  #detailcont{
+    margin-top:80px;
+  }
+  footer{
+    height: auto;
+  }
+}
